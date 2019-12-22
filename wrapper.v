@@ -315,9 +315,9 @@ pipeline_v m1(
 );
 assign __all_assert_wire__ = variable_map_assert__p9__ && variable_map_assert__p10__ && variable_map_assert__p11__ && variable_map_assert__p16__ ;
 assign __all_assume_wire__ = (additional_mapping_control_assume__m33__)&& (invariant_assume__m17__)&& (invariant_assume__m18__)&& (invariant_assume__m19__)&& (invariant_assume__m20__)&& (invariant_assume__m21__)&& (invariant_assume__m22__)&& (invariant_assume__m23__)&& (invariant_assume__m24__)&& (invariant_assume__m25__)&& (invariant_assume__m26__)&& (invariant_assume__m27__)&& (invariant_assume__m28__)&& (invariant_assume__m29__)&& (invariant_assume__m30__)&& (invariant_assume__m31__)&& (invariant_assume__m32__)&& (issue_decode__m34__)&& (issue_valid__m35__)&& (noreset__m0__)&& (variable_map_assume___m1__)&& (variable_map_assume___m2__)&& (variable_map_assume___m3__)&& (variable_map_assume___m8__) ;
-assert property ( __all_assert_wire__ ); // the only assertion 
+//assert property ( __all_assert_wire__ ); // the only assertion 
 
-assume property ( __all_assume_wire__ ); // the only assumption 
+//assume property ( __all_assume_wire__ ); // the only assumption 
 
 endmodule
 module simplePipe__DOT__ADD(
@@ -500,8 +500,8 @@ wire [1:0] reg_3_w_stage_nxt = {1'b0, reg_3_w_stage[1]};// reg_3_w_stage >> 1;
 wire [7:0] id_rs1_val;
 wire [7:0] id_rs2_val;
 
-wire [2:0] rs1_stage_info;
-wire [2:0] rs2_stage_info;
+wire [1:0] rs1_stage_info;
+wire [1:0] rs2_stage_info;
 wire [7:0] rs1_val;
 wire [7:0] rs2_val;
 
